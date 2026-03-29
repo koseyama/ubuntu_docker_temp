@@ -3,7 +3,6 @@ FROM ubuntu:latest
 ARG USER_NAME="kyamauchi"
 ARG USER_ID="1000"
 ARG USER_GID="1000"
-ARG REQS_PATH="/XXX/requirements.txt"
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 RUN apt-get update && apt-get install -y \
